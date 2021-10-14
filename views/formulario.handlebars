@@ -1,0 +1,30 @@
+<form action="/add" method="POST" class="needs-validation" novalidate>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="">Nome</label>
+            <input id="nome_contato" name="nome" type="text" class="form-control" required>
+            <div class="invalid-feedback">
+                Informe seu nome!
+            </div>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="">E-mail</label>
+            <input id="email_contato" name="email" type="email" class="form-control" required>
+            <div class="invalid-feedback">
+                Informe seu e-mail!
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col">
+            <label for="">Mensagem</label>
+            <textarea class="form-control" name="mensagem" id="mensagem_contato" rows="3" required></textarea>
+            <div class="invalid-feedback">
+            Informe a mensagem!
+        </div>
+        </div>
+    </div>
+    <div class="text-center">
+         <button class="btn btn-principal" type="submit">Submeter</button>
+    </div>
+</form>
